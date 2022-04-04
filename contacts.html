@@ -12,7 +12,11 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="css/et-line.css">
-	
+	<script defer src="./js/jquery-2.1.0.min.js"></script>
+	<script defer src="./js/bootstrap.min.js"></script>
+	<script defer src="./js/blocs.min.js"></script>
+	<script defer src="./js/jqBootstrapValidation.js"></script>
+	<script defer src="./js/formHandler.js"></script>
     
     <title>Contactez-nous, La Panthère</title>
 
@@ -59,10 +63,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text white">
+				<h1 class="text-center hero-bloc-text">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg white tight-width-whitespace txtcontacts">
+				<p class="text-center mg-lg tight-width-whitespace txtcontacts improvetxt white">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -81,27 +85,31 @@
 					<div class="form-group">
 						<label>
 							Nom
+							<input id="name" aria-label="Insérez votre nom"  class="form-control" required />
 						</label>
-						<input id="name" class="form-control" required />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Adresse email
+							<input id="email" aria-label="Insérez votre adresse email" class="form-control" type="email" required />
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Comment nous avez-vous connu ?
+							<input class="form-control" aria-label="Comment avez vous connu ?"  type="email" required id="input_504" />
 						</label>
-						<input class="form-control" type="email" required id="input_504" />
+						
 					</div>
 					<div class="form-group">
 						<label>
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+							<textarea id="message" class="form-control" aria-label="Brief du projet"  rows="4" cols="50" required></textarea>
+						</label>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine improvetxt" type="submit" aria-label="Bouton envoyez" >
 						Envoyer
 					</button>
 				</form>
@@ -116,9 +124,7 @@
 </div>
 <!-- bloc-7 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+
 
 
 <!-- Footer - bloc-8 -->
@@ -126,28 +132,28 @@
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
+				<p class="text-center improvetxt">
 					Agence La Panthère - Agence web basée à Lyon.<br>
 				</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="twitter.com"><span class="fa fa-twitter icon-md">Twitter</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="facebook.com"><span class="fa fa-facebook icon-md">Facebook</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="dribble.com"><span class="fa fa-dribbble icon-md">Dribble</span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="instagram.com"><span class="fa fa-instagram icon-md">Instagram</span></a>
 						</div>
 					</div>
 				</div>
@@ -161,10 +167,6 @@
 <!-- Principal conteneur END -->
     
 
-<script src="./js/jquery-2.1.0.min.js" defer></script>
-<script src="./js/bootstrap.min.js" defer></script>
-<script src="./js/blocs.min.js" defer></script>
-<script src="./js/jqBootstrapValidation.js" defer></script>
-<script src="./js/formHandler.js" defer></script>
+
 </body>
 </html>

@@ -509,7 +509,9 @@ button {
     border-color: rgba(0, 0, 0, .1);
     box-shadow: none;
 }
-
+label{
+    width:100% !important;
+}
 .scrollToTop {
     width: 40px;
     height: 40px;
@@ -700,7 +702,7 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    max-width: 100%;
     margin: auto auto auto auto;
 }
 
@@ -784,12 +786,12 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #C67A56;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #C67A56!important;
     color: #FFFFFF!important;
 }
 
@@ -834,6 +836,7 @@ h4 {
     text-align: center;
     font-weight: 700;
 }
+
 .row{
     display: flex;
     align-items: center;
@@ -878,6 +881,9 @@ h4 {
 }
 
 @media (max-width: 991px) {
+    .aligntxt{
+        margin-right:-20rem;
+    }
     .container {
         width: 100%;
     }
@@ -910,6 +916,9 @@ h4 {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .social2{
+        padding:0.5rem 0;
     }
 
     .row{
@@ -1051,6 +1060,10 @@ h4 {
         width: 180px;
         height: 320px;
     }
+    .aligntxt{
+        margin-right:-15rem !important;
+        padding:0 !important;
+    }
 }
 
 @media (max-width: 400px) {
@@ -1058,10 +1071,26 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+    .aligntxt{
+        margin-right:0rem !important;
+        margin-left:10rem !important;
+    }
 }
 
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
     }
+
+}
+.aligntxt{
+    margin-left:-20% !important;
+}
+.improvetxt{
+    font-size: 24px;
+    font-weight: bolder;
+}
+.improvebtntxt{
+    font-size:28px;
+    font-weight: bolder;
 }
